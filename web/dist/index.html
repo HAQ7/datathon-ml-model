@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="output.css" />
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title>BaitGuard</title>
+    </head>
+    <body class="overflow-x-hidden h-screen grid place-items-center">
+        <img src="img/hook-svgrepo-com.svg" class="absolute top-0 left-0 m-3 w-20 shake" alt="">
+        <section class="w-screen h-screen grid place-items-center"> 
+            <div
+            id="startMenu"
+                    class="grid place-items-center z-20 relative mt-10 md:mt-0 w-full text-center"
+                >
+                    <h1 class="xl:text-6xl text-4xl font-black">
+                        Am I Safe ?
+                    </h1>
+                    <h4 class="text-md font-extrabold">
+                        check your if your message is a phising phishing or not ?
+                    </h4>
+                    <div class="flex mt-5">
+                        <button
+                            id="startBtn"
+                            class="border-black border-10 flex justify-center items-center font-medium bg-blue-500 hover:bg-blue-600 transition-all text-md w-40 p-4 rounded-3xl"
+                        >
+                            <span class="text-white"
+                                >Start Test</span
+                            >
+                        </button>
+                    </div>
+                </div>
+                <div class="w-screen z-20 gap-0 flex flex-col items-center absolute opacity-0">
+                    <div class="output border border-2 border-blue-200 w-[95%] h-10 rounded-t-3xl border-top border-left border-right border-blue-500"></div>
+                    <form class="flex items-center flex-col gap-0 bg-blue-200 p-6 rounded-b-3xl w-[95%] border border-blue-500">
+                        <label for="message" class="font-bold text-sm w-full">Enter The message :</label>
+                        <textarea id="message" type="text" class="my-2 h-36 border-2 border-blue-900 rounded-3xl border w-full p-2"></textarea>
+                        <button
+                            id="startBtn"
+                            class="border-black border-10 flex justify-center items-center font-medium bg-blue-400 hover:bg-blue-600 transition-all text-md  p-1 rounded-3xl w-24 h-10"
+                        >
+                            <span class="text-white"
+                                >Start Test</span
+                            >
+                        </button>   
+                    </form>
+                    
+                </div>
+        </section>
+        <!-- <img src="img/background.svg" class="w-screen absolute bottom-0 z-0" alt=""> -->
+        
+    </body>
+</html>

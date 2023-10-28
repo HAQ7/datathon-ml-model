@@ -1,0 +1,34 @@
+.bottomToTop {
+    animation: 0.5s bottomToTop forwards;
+    transform: translate(0px);
+}
+
+@keyframes bottomToTop {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    } 100% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
+
+.shake {
+    animation: shake 3s infinite;
+}
+
+@keyframes shake {
+    0% {
+        rotate: 0deg;
+    }
+    50% {
+        rotate: 0deg;
+    } 66% {
+        rotate: 30deg;
+    } 82% {
+        rotate: -10deg;
+
+    } 100% {
+        rotate: 0deg;
+    }
+}
